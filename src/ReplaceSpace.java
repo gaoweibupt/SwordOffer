@@ -21,7 +21,4 @@ public class ReplaceSpace {
     	}
     	return sb.toString();
     }
-    public String replaceSpace1(StringBuffer str){
-    	
-    }
 }
