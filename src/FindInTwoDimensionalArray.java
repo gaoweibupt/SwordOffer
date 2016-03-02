@@ -1,6 +1,9 @@
 /**
 * @author : gaoweibupt@gmail.com
 * Date: 2016年3月1日下午6:38:12
+* 
+* 剑指offer第3题，二维数组中的查找
+* 
 */
 public class FindInTwoDimensionalArray {
     public boolean Find(int [][] array,int target) {
