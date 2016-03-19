@@ -20,6 +20,7 @@ public class InversePairsNum {
     			 array[s] = array[e - 1];
     			 array[e - 1] = temp;
     			 result = 1;
+    			 return result;
     		 }
     	 }
     	 int m = (e + s) / 2;
@@ -49,14 +50,20 @@ public class InversePairsNum {
     			}
     			else{
     				a[n] = array[j];n++;
-    				result += (j - m + 1);
+    				result += (m - i);
     				j++;
     			}
     		}
     	}
-    	for (i = 0; i < e - s; i++){
-    		array[i] = a[i];
+    	n = 0;
+    	for (int h = s; h < e; h++){
+    		array[h] = a[n]; n++;
     	}
     	return result;
+    }
+    
+    public static void main(String[] args){
+    	int[] array = {6,5,4,3,2,1};
+    	System.out.println(new InversePairsNum().InversePairs(array));
     }
 }
